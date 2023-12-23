@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- loading static files -->
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            {% block title %}
+                ドイツ語！（仮称）
+            {% endblock %}
+        </title>
+        <!-- title -->
+        <link rel="icon" href="https://via.placeholder.com/70x70">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/additional_classes.css' %}">
+        <meta charset="utf-8">
+        <meta name="description" content="My description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            {% block header %}
+            <nav>
+                <a href="/"><img alt="Logo" src="{% static 'images/swan_icon.png' %}" height="70"></a>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#section-1">About Us</a></li>
+                    <li><a href="#">Dropdown Menu Item</a>
+                        <ul>
+                            <li><a href="#">Sublink with a long name</a></li>
+                            <li><a href="#">Short sublink</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1>ドイツ語！（仮称）</h1>
+            <p>Welcome to our website!</p>
+            <hr>
+        <!-- header block -->
+        <!-- same content applied to every page -->            
+            {% endblock %}
+        </header>
+
+
+        <main>
+        {% block body %}
+        <p>ボディ</p>
+        <!-- body block -->
+        <!-- page content to be here-->        
+        {% endblock %}
+
+        </main>
+
+        <footer>
+            {% block footer %}
+            <hr>
+            <p><small>All Rights Reserved 2023- @ Jun Tanaka</small></p>
+            {% endblock %}
+        <!-- footer block -->
+        <!-- same content applied to every page -->            
+        </footer>
+
+    </body>
+</html>

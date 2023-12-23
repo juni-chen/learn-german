@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}ユーザ登録画面{% endblock %}
+
+{% block body %}
+<section>
+    <form>
+        <header>
+            <h2>ユーザ登録画面</h2>
+        </header>
+        <label for="input1">希望のID:</label>
+        <input type="text" id="id_submittion" name="id_submittion" size="20" placeholder="id_submittion">
+        <label for="input1">希望のパスワード:</label>
+        <input type="text" id="password_submittion" name="password_submittion" size="20" placeholder="password_submittion">
+        <label for="input1">メールアドレス:</label>
+        <input type="email" id="email_submittion" name="email_submittion" size="20" placeholder="email_submittion">
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+{% endblock %}

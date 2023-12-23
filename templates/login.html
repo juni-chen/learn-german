@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}ログイン画面{% endblock %}
+
+{% block body %}
+<section>
+    <form>
+        <header>
+            <h2>ログイン画面</h2>
+        </header>
+        <label for="input1">ID:</label>
+        <input type="text" id="userid" name="userid" size="20" placeholder="userid">
+        <label for="input1">パスワード:</label>
+        <input type="text" id="password" name="password" size="20" placeholder="password">
+        <button type="submit">Submit</button>
+    </form>
+</section>
+{% endblock %}
