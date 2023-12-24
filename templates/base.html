@@ -24,10 +24,10 @@
                 <a href="/"><img alt="Logo" src="{% static 'images/swan_icon.png' %}" height="70"></a>
                 <ul>
                     <li><a href="#">Login</a></li>
-                    <li><a href="{% url 'textbooks/' %}">Textbooks</a></li>
+                    <li><a href="{% url 'textbooks:index' %}">Textbooks</a></li>
                     <li><a href="#">その他の機能</a>
                         <ul>
-                            <li><a href="{% url 'quiz/' %}">Word Quiz</a></li>
+                            <li><a href="{% url 'wordquiz:index' %}">Word Quiz</a></li>
                             <li><a href="#">今後いろいろ追加されるかも…？</a></li>
                         </ul>
                     </li>
