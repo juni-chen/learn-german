@@ -1,0 +1,12 @@
+.background-skyblue {
+    background-color: skyblue;
+    background-size: cover;
+}
+
+.centralized-text {
+    text-align: center;
+}
+
+.left-aligned-text {
+    text-align: left;
+}
