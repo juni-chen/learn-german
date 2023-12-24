@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
-    'wordquiz.apps.WordquizConfig'
+    'wordquiz.apps.WordquizConfig',
+    'textbooks.apps.TextbooksConfig',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +128,8 @@ STATIC_DIR = os.path.join(BASE_DIR, "static")
 # STATICFILES_DIRS = [
 #     STATIC_DIR,
 # ]
+
+
 
 
 # Default primary key field type
