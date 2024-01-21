@@ -14,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/additional_classes.css' %}">
         <meta charset="utf-8">
-        <meta name="description" content="My description">
+        <meta name="description" content="ドイツ語を学習するサイトです">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -24,7 +24,8 @@
                 <a href="/"><img alt="Logo" src="{% static 'images/swan_icon.png' %}" height="70"></a>
                 <ul>
                     <li><a href="#">Login</a></li>
-                    <li><a href="#">Textbooks</a></li>
+                    <li><a href="{% url 'textbooks:index' %}">Textbooks</a></li>
+                    <li><a href="#">Diary</a></li>
                     <li><a href="#">その他の機能</a>
                         <ul>
                             <li><a href="#">Word Quiz</a></li>
